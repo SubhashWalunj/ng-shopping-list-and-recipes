@@ -1,5 +1,5 @@
 <div class="card">
-  <img class="responsive-image" [src]="recipe?.imgPath" alt="recipe-img" />
+  <img class="responsive-image" [src]="recipe?.imgPath" [alt]="recipe?.name" />
   <div class="card-body">
     <h5 class="card-title" [textContent]="recipe?.name"></h5>
     <p class="card-text" [textContent]="recipe?.description"></p>

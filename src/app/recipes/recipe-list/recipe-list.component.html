@@ -1,5 +1,9 @@
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let recipe of recipes">
-    <app-recipe-item></app-recipe-item>
+  <li
+    class="list-group-item"
+    *ngFor="let recipeItem of recipes"
+    (click)="onRecipeSelection(recipeItem)"
+  >
+    <app-recipe-item [recipe]="recipeItem"></app-recipe-item>
   </li>
 </ul>

@@ -1,0 +1,6 @@
+enum NAV_ITEMS {
+  RECIPE = 'RECIPE',
+  SHOPPING_LIST = 'SHOPPING_LIST',
+}
+
+export default NAV_ITEMS;

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light mx-2">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
   <a class="navbar-brand" href="#">Recipe App</a>
   <button
     class="navbar-toggler"
@@ -15,15 +15,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Recipes</a>
+        <a class="nav-link" href="#" (click)="onNavItemClick(navItems.RECIPE)"
+          >Recipes</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shopping list</a>
+        <a
+          class="nav-link"
+          href="#"
+          (click)="onNavItemClick(navItems.SHOPPING_LIST)"
+          >Shopping list</a
+        >
       </li>
     </ul>
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <button type="button" class="btn btn-success">Add recipe</button>
+        <button type="button" class="btn btn-success">Add new recipe</button>
       </li>
     </ul>
   </div>

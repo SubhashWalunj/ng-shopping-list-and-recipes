@@ -1,15 +1,8 @@
 <div class="card">
-  <img
-    class="responsive-image"
-    src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?resize=960,872?quality=90&webp=true&resize=600,545"
-    alt="recipe-img"
-  />
+  <img class="responsive-image" [src]="recipe?.imgPath" alt="recipe-img" />
   <div class="card-body">
-    <h5 class="card-title">Recipe Name</h5>
-    <p class="card-text">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </p>
+    <h5 class="card-title" [textContent]="recipe?.name"></h5>
+    <p class="card-text" [textContent]="recipe?.description"></p>
     <button type="button" class="btn btn-primary" style="margin-right: 0.5rem">
       Edit
     </button>
